@@ -1,0 +1,38 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-areas: 
+        "he he"
+        "na bod"
+        "na bod"
+        "foo foo";
+}
+
+header {
+    grid-area: he;
+    background-color: salmon;
+    border: 1px solid black;
+}
+
+nav {
+    grid-area: na;
+    background-color: olive;
+    border: 1px solid black;
+}
+
+.navbar{
+    background-color: rgb(61, 61, 8);
+    border: 1px solid black;
+}
+
+main {
+    grid-area: bod;
+    background-color: rgb(117, 117, 247);
+    border: 1px solid black;
+}
+
+footer {
+    grid-area: foo;
+    background-color: lime;
+    border: 1px solid black;
+}
