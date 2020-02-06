@@ -17,9 +17,10 @@ a {
 
 header {
     grid-area: he;
-    background-color: #5768a5;
+    background-color: rgb(250, 250, 254);
     padding: 5px;
     text-align: center;
+    color: #5768a5;
 }
 
 header p{
@@ -28,7 +29,7 @@ header p{
 
 aside {
   grid-area: na;
-  background-color: rgb(232, 237, 253);
+  background-color: rgb(250, 250, 254);
 }
 
 nav {
@@ -38,7 +39,7 @@ nav {
 }
 
 .navbar {
-  background-color: #373b75;
+  background-color: #5768a5;
   border-radius: 25px;
   text-align: center;
 }
@@ -74,16 +75,17 @@ nav {
 
 main {
     grid-area: bod;
-    background-color:rgb(232, 237, 253);
+    background-color: rgb(250, 250, 254);
+    padding: 2px 5px;
 }
 
 footer {
     grid-area: foo;
-    background-color: #373b75;
+    background-color: #5768a5;
 }
 
 @media screen and (max-width: 768px) {
-  
+
 }
 
 @media screen and (max-width: 425px) {
@@ -98,7 +100,7 @@ footer {
   .navbar-list {
     display: none;
   }
-  
+
   .navbar-shown {
     display: block;
   }
