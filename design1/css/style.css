@@ -1,0 +1,99 @@
+.grid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-areas:
+    "he he"
+    "na na"
+    "bod bod"
+    "foo foo";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+    grid-area: he;
+    background-color: #5768a5;
+    padding: 5px;
+    text-align: center;
+}
+
+header p{
+    margin: 0 20vw;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    grid-area: na;
+}
+
+.navbar {
+    background-color: #373b75;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.navbar li:hover {
+  background-color: #FFFFFF88;
+}
+
+.navbar li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-swap {
+  text-align: center;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+main {
+    grid-area: bod;
+    background-color:rgb(232, 237, 253);
+}
+
+footer {
+    grid-area: foo;
+    background-color: #373b75;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 425px) {
+  .navbar li {
+    display: block;
+  }
+
+  .navbar-swap {
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+  
+  .navbar-shown {
+    display: block;
+  }
+}
