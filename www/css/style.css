@@ -1,6 +1,7 @@
 /*Mobile display*/
 
 .grid {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0;
     padding: 0;
     display: grid;
@@ -9,7 +10,7 @@
 }
 
 .title {
-    background-color: #a1afe4;
+    background-color: #5c79e0;
     padding: 5px;
     text-align: center;
     margin: auto;
@@ -35,7 +36,7 @@ nav {
     position: sticky;
     top: 0px;
     box-shadow: 2px 2px 2px #161a27;
-    background-color: #5768a5;
+    background-color: #2a44a1;
     border-radius: 0 0 25px 25px;
     text-align: center;
     font-size: 1.8em;
@@ -92,7 +93,7 @@ main {
 .article-prev {
     margin: 12px;
     box-shadow: 6px 6px 2px #2f3650;
-    border: thick double #5768a5;
+    border: thick double #2a44a1;
     padding: 6px;
 }
 
@@ -108,7 +109,7 @@ main {
 
 footer {
     grid-area: foo;
-    background-color: #5768a5;
+    background-color: #2a44a1;
     border-radius: 25px 25px 0 0;
     padding: 0 12px;
 }
@@ -140,7 +141,6 @@ footer {
     }
     nav {
         border-radius: 50px;
-        background-color: #5768a5;
     }
 }
 
