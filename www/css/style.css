@@ -10,7 +10,7 @@
 }
 
 .title {
-    background-color: #5c79e0;
+    background: linear-gradient(to bottom right, #745ce0 0%, #5c79e0 100%);
     padding: 5px;
     text-align: center;
     margin: auto;
@@ -95,6 +95,7 @@ main {
     box-shadow: 6px 6px 2px #2f3650;
     border: thick double #2a44a1;
     padding: 6px;
+    font-size: 0.8em;
 }
 
 .article-prev div {
