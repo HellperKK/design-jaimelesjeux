@@ -41,6 +41,7 @@ nav {
   background-color: #5768a5;
   border-radius: 0 0 25px 25px;
   text-align: center;
+  font-size: 1.8em;
 }
 
 .navbar ul {
@@ -51,7 +52,6 @@ nav {
 .navbar li {
   list-style: none;
   display: block;
-  font-size: 1.5em;
 }
 
 .navbar li:hover {
@@ -70,6 +70,7 @@ nav {
   width: 100%;
   background-color: transparent;
   border: none;
+  font-size: 1.5em;
 }
 
 .navbar-list {
