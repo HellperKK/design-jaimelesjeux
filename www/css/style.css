@@ -93,21 +93,31 @@ main {
 
 .article-prev {
     margin: 12px;
-    box-shadow: 6px 6px 2px #2f3650;
     border: thick double #2a44a1;
     padding: 6px;
     font-size: 0.8em;
 }
 
-.article-prev div {
-    display: inline-block;
+.article-prev {
+    margin: 12px;
+    border: thick solid #2a44a1;
+    padding: 6px;
+    font-size: 0.8em;
 }
 
-.article-image {
-    width: 120px;
-    height: 120px;
-    display: inline-block;
+.article-link {
+    display: block;
+    box-shadow: 2px 2px 2px #2f3650;
+    background: linear-gradient(to bottom right, #c35ce0 0%, #5c79e0 100%);
+    color: white;
+    text-align: center;
 }
+
+/* .article-image {
+width: 120px;
+height: 120px;
+display: inline-block;
+} */
 
 footer {
     grid-area: foo;
@@ -122,31 +132,31 @@ footer {
 @media screen and (max-width: 426px) {}
 
 
-/*Desktop display*/
+    /*Desktop display*/
 
-@media screen and (min-width: 769px) {
-    .article-left {
-        align-self: flex-start;
+    @media screen and (min-width: 769px) {
+        .article-left {
+            align-self: flex-start;
+        }
+        .article-middle {
+            align-self: center;
+        }
+        .article-right {
+            align-self: flex-end;
+        }
+        .article-prev {
+            width: 40vw;
+        }
+        .title {
+            border-radius: 50px;
+            width: 40vw;
+        }
+        nav {
+            border-radius: 50px;
+        }
     }
-    .article-middle {
-        align-self: center;
-    }
-    .article-right {
-        align-self: flex-end;
-    }
-    .article-prev {
-        width: 40vw;
-    }
-    .title {
-        border-radius: 50px;
-        width: 40vw;
-    }
-    nav {
-        border-radius: 50px;
-    }
-}
 
 
-/*4K desktop display*/
+    /*4K desktop display*/
 
-@media screen and (min-width: 1441px) {}
+    @media screen and (min-width: 1441px) {}
