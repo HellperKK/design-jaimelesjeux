@@ -56,7 +56,6 @@ nav {
     display: block;
     width: 100%;
     height: 100%;
-    color: white;
 }
 
 .navbar-swap {
@@ -76,9 +75,22 @@ nav {
     display: block;
 }
 
+.navbar-item a {
+    margin: 0 12px;
+}
+
+.navbar-item a {
+    color: white;
+}
+
+.navbar-item-selected a {
+    color: #e4d05e;
+}
+
 main {
     grid-area: bod;
-    background-color: #ffffff;
+    background-image: url("../images/bg-dice.jpg");
+    background-size: cover;
     padding: 2px 5px;
 }
 
@@ -92,6 +104,7 @@ main {
     border: thick double #2a44a1;
     padding: 6px;
     font-size: 0.8em;
+    background-color: white;
 }
 
 .article-prev {
@@ -170,8 +183,14 @@ footer {
 
 /*4K desktop display*/
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1440px) {
     .placeholder {
         color: black;
+    }
+    .grid {
+        margin: 0 15vw;
+    }
+    nav {
+        box-shadow: 0px 2px 2px #161a27;
     }
 }
