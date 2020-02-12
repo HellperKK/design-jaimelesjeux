@@ -7,6 +7,8 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-areas: "he he" "na na" "bod bod" "foo foo";
+    background-image: url("../images/bg-dice.jpg");
+    background-size: contain;
 }
 
 .title {
@@ -89,8 +91,6 @@ nav {
 
 main {
     grid-area: bod;
-    background-image: url("../images/bg-dice.jpg");
-    background-size: cover;
     padding: 2px 5px;
 }
 
