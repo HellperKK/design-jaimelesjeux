@@ -15,7 +15,8 @@ html {
     display: grid;
     grid-auto-rows: 150px 60px 1fr 60px;
     grid-template-areas: "he he" "na na" "bod bod" "foo foo";
-    background-image: linear-gradient(to right bottom, #000000, #131212, #1e1d1e, #2a282a, #353437, #353437, #353437, #353437, #2a282a, #1e1d1e, #131212, #000000);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(145deg, #514155 0%, #4f5f99 50%, #514155 100%);
     background-size: contain;
     min-height: 100%;
 }
