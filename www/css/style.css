@@ -119,14 +119,12 @@ main {
     flex-direction: row;
 }
 
-.bookmark {
-    position: sticky;
-    top: 30px;
-    margin: 12px;
-    background-color: white;
-    border: thick solid #2a44a1;
-    padding: 6px;
-    width: 150px;
+.anchor {
+    padding-top: 65px;
+}
+
+.bookmark-container {
+    display: none;
 }
 
 .bookmark ul {
@@ -193,6 +191,21 @@ footer {
 /*Desktop display*/
 
 @media screen and (min-width: 768px) {
+    .anchor {
+        padding-top: 35px;
+    }
+    .bookmark-container {
+        display: block;
+    }
+    .bookmark {
+        position: sticky;
+        top: 30px;
+        margin: 12px;
+        background-color: white;
+        border: thick solid #2a44a1;
+        padding: 6px;
+        width: 150px;
+    }
     .grid {
         grid-auto-rows: 120px 25px 1fr 60px;
     }
