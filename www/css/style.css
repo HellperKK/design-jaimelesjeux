@@ -1,20 +1,27 @@
 /*Mobile display*/
 
+html {
+    height: 100%;
+}
+
 .global {
     margin: 0;
+    height: 100%;
+    background-color: black;
 }
 
 .grid {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-auto-rows: 150px 50px 1fr 60px;
     grid-template-areas: "he he" "na na" "bod bod" "foo foo";
-    background-image: url("../images/bg-dice.jpg");
+    background-image: linear-gradient(to right bottom, #000000, #131212, #1e1d1e, #2a282a, #353437, #353437, #353437, #353437, #2a282a, #1e1d1e, #131212, #000000);
     background-size: contain;
+    min-height: 100%;
 }
 
 .title {
-    background: linear-gradient(to bottom right, #c35ce0 0%, #5c79e0 100%);
     color: white;
     padding: 5px;
     text-align: center;
@@ -28,6 +35,7 @@ a {
 header {
     grid-area: he;
     background-color: #ffffff;
+    background: linear-gradient(to bottom right, #c35ce0 0%, #5c79e0 100%);
 }
 
 nav {
@@ -56,12 +64,6 @@ nav {
     background-color: #FFFFFF88;
 }
 
-.navbar li a {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
 .navbar-swap {
     display: block;
     text-align: center;
@@ -80,11 +82,11 @@ nav {
 }
 
 .navbar-item a {
-    margin: 0 12px;
-}
-
-.navbar-item a {
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
     color: white;
+    height: 100%;
 }
 
 .navbar-item-selected a {
@@ -152,6 +154,19 @@ footer {
 /*Desktop display*/
 
 @media screen and (min-width: 769px) {
+    .grid {
+        font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-auto-rows: 100px 30px 1fr 60px;
+        grid-template-areas: "he he" "na na" "bod bod" "foo foo";
+        background-image: linear-gradient(to right bottom, #000000, #131212, #1e1d1e, #2a282a, #353437, #353437, #353437, #353437, #2a282a, #1e1d1e, #131212, #000000);
+        background-size: contain;
+        min-height: 100%;
+    }
+    header {
+        font-size: 0.8em;
+    }
     .article-left {
         align-self: flex-start;
     }
@@ -166,6 +181,7 @@ footer {
     }
     nav {
         border-radius: 0;
+        font-size: 1em;
     }
     .navbar li {
         list-style: none;
@@ -194,5 +210,8 @@ footer {
     }
     nav {
         box-shadow: 0px 2px 2px #161a27;
+    }
+    .article-prev {
+        font-size: 1.2em;
     }
 }
