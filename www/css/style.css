@@ -119,9 +119,10 @@ main {
     flex-direction: row;
 }
 
-.anchor {
+
+/* .anchor {
     padding-top: 65px;
-}
+} */
 
 .bookmark-container {
     display: none;
