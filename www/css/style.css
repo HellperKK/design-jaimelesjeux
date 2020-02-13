@@ -114,12 +114,32 @@ main {
     flex-direction: column;
 }
 
-.article-prev {
+.article-page {
+    display: flex;
+    flex-direction: row;
+}
+
+.bookmark {
+    position: sticky;
+    top: 30px;
     margin: 12px;
-    border: thick double #2a44a1;
-    padding: 6px;
-    font-size: 0.8em;
     background-color: white;
+    border: thick solid #2a44a1;
+    padding: 6px;
+    width: 150px;
+}
+
+.bookmark ul {
+    padding: 0;
+}
+
+.bookmark li {
+    list-style: none;
+    display: block;
+}
+
+.bookmark a {
+    color: black;
 }
 
 .article-prev {
@@ -127,6 +147,14 @@ main {
     border: thick solid #2a44a1;
     padding: 6px;
     font-size: 0.8em;
+    background-color: white;
+}
+
+.article-base {
+    margin: 12px;
+    border: thick solid #2a44a1;
+    padding: 6px;
+    background-color: white;
 }
 
 .article-link {
